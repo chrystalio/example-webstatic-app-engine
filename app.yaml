@@ -2,9 +2,13 @@ runtime: python39
 
 handlers:
 - url: /
-  static_files: example-webstatic-app-engine/index.html
-  upload: example-webstatic-app-engine/index.html
+  static_files: index.html
+  upload: index.html
 
-- url: /(.*)
-  static_files: example-webstatic-app-engine/\1
-  upload: example-webstatic-app-engine/(.*)
+- url: /script.js
+  static_files: script.js
+  upload: script.js
+
+- url: /style.css
+  static_files: style.css
+  upload: style.css
